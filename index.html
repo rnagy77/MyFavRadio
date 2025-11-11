@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kedvenc Internet Rádióim</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #f9f9f9 0%, #e6e6e6 100%);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2b3a67;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 1.5rem auto;
+      padding: 0 1rem;
+    }
+
+    .radio {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1.2rem;
+      padding: 1rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .radio:hover {
+      transform: scale(1.02);
+      box-shadow: 0 5px 14px rgba(0,0,0,0.15);
+    }
+
+    .radio h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      color: #2b3a67;
+      font-size: 1.1rem;
+    }
+
+    audio {
+      width: 100%;
+      outline: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /* Mobilbarát design */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.2rem;
+      }
+
+      .radio {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎧 Kedvenc Internet Rádióim</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="radio">
+      <h3>Radio4U</h3>
+      <audio controls preload="none">
+        <source src="http://mpc1.mediacp.eu:8342/stream" type="audio/mpeg">
+        A böngésződ nem támogatja az audio lejátszást.
+      </audio>
+    </div>
+
+    <div class="radio">
+      <h3>Radio Groove</h3>
+      <audio controls preload="none">
+        <source src="http://radiogroove.hu:80/live.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="radio">
+      <h3>Dance Wave Retro</h3>
+      <audio controls preload="none">
+        <source src="http://stream2.dancewave.online:8080/retrodance.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="radio">
+      <h3>MegaDance Radio</h3>
+      <audio controls preload="none">
+        <source src="https://gamershouse.hu:8080/livemega.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="radio">
+      <h3>Radio 538</h3>
+      <audio controls preload="none">
+        <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538AAC_SC" type="audio/aac">
+      </audio>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Kedvenc Rádióim – Saját hallgatási lista 🎵</p>
+  </footer>
+</body>
+</html>
